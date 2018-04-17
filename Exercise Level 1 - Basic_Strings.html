@@ -1,10 +1,23 @@
 <!DOCTYPE HTML>
 <html>
     <body>
-        <p>Before the script...</p>
-            <script>
-            window.alert('Hello, world!');
-            </script>
-        <p>...After the script.</p>
+        <p>Exercise Level 1 - Basic : Strings </p>
+
+        <p>Change this sentence: "He said My name is Elliott" to uppercase </p>
+        <button onclick="changeStringFunction()"> Change to UpperCase</button>
+        <p id="button"></p>
+
+        <script>
+
+            function changeStringFunction() {
+            var sentence = "He said My name is Elliott";
+            var changed = sentence.toUpperCase();
+            document.getElementById("button").innerHTML = changed;
+            console.log(changed);
+            }
+
+        </script>
+
+        <p>End Exercise Level 1 - Basic.</p>
     </body>    
 </html>
