@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+
+        <h1>NUMBER GAMES!</h1>
+
+        <form>
+            Guess a Number from 1 to 100<br><input type="number" id="user"><br>
+        </form>
+<br>
+
+        <button type="button" onclick="CheckNumber()">Submit</button>
+
+        <button type="button" onclick="NewNumber()">Restart</button>
+
+            <script>
+                
+                let i=0;
+                let min = 1;
+                let max = 100;
+
+                let y = Math.floor(Math.random() * (max - min) + min)
+                //console.log(y);
+
+
+                function NewNumber()  {
+                    y = Math.floor(Math.random() * (max - min) + min);
+                    i=0;
+                    console.log("NEW GAME!");
+                    //console.log(y);
+                }        
+
+
+                function CheckNumber(){
+                    
+                    let x = document.getElementById("user").value;
+                 
+                if (i <= 9){
+                
+                           
+                    if (x > y){
+                      
+                         console.log ("Lower")
+
+                    }
+                    else if (x < y){
+                         console.log ("Higher")
+                    }
+
+                    else if (x == y){
+                         console.log ("Correct!")}
+
+                    }
+                    else if (i = 9){
+                        console.log("GAME OVER!")
+                    }
+                                    
+                  i++;
+
+                  console.log(i)
+                }
+
+        
+            </script>
+    </body>
+</html>
