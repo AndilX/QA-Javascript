@@ -3,16 +3,19 @@
     <body>
         <p>Exercise Flow of Control</p>
             <script>
-            var variableAge = 888;
+             "use strict";
+            let variableAge = 888;
+            let i = 0;
 
             console.log(variableAge);
 
             if (variableAge <=17) {
                 console.log("Underage!");
-            } else if(variableAge =>18 & variableAge <=65){
+            } 
+            if(variableAge =>18 & variableAge <=65){
                 console.log("Insurable!"); 
-            }else{
-                console.log("Out of range")
+            }else if(variableAge >65){
+                console.log("Out of range");
             }
 
             //------Part 3
@@ -23,13 +26,14 @@
 
             //------Part 4
 
-            var counter = 2
-            var loopCount = 0
+            var counter = 2;
+            var loopCount = 0;
+
             while(counter < 100){
-                counter =  counter*counter
-                loopCount ++
-            console.log("total: " + counter)
-            console.log("loopCount: " + loopCount)
+                counter =  counter*counter;
+                loopCount ++;
+            console.log("total: " + counter);
+            console.log("loopCount: " + loopCount);
             }
 
             </script>
